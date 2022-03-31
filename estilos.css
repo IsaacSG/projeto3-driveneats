@@ -1,0 +1,89 @@
+.big-container {
+    background-color: #E5E5E5;
+    position: relative;
+}
+.barra-topo{
+    width: 414px;
+    height: 92px;
+    background-color: #CF2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.barra-topo > h2 {
+    font-size: 44px;
+    color: #FFFFFF;
+    font-family: "Righteous";
+    font-weight: 400;
+    font-style: normal;
+}
+.barra-topo > h3 {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.container {
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    margin-top: 123px;
+}
+.container > h1 {
+    margin-bottom: 17px;
+    font-size: 26px;
+    font-size: 400;
+}
+.pratos {
+    display: flex;
+    margin-bottom: 27px;
+    overflow-x: scroll;
+}
+.prato {
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 16px;
+    border-radius: 9px;
+}
+.prato > img {
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+}
+.prato > h2 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    position: absolute;
+    left: 14px;
+    bottom: 80px;
+}
+.descricao {
+    position: absolute;
+    left: 14px;
+    bottom: 37px;
+}
+.descricao > h4 {
+    font-size: 15px;
+    color: #A6A6A6;
+    font-weight: 300;
+}
+.prato > h3 {
+    position: absolute;
+    left: 14px;
+    bottom: 13px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
