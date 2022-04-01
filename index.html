@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <div class="big-container">
  <div class="barra-topo">
      <h2>DivenEats</h2>
      <h3>Sua comida em 6 minutos</h3>
@@ -21,7 +20,7 @@
  <div class="container">
      <h1>Primeiro, seu prato</h1>
      <div class="pratos">
-         <div class="prato">
+         <div onclick="selecionar(`${this} + food`)" class="prato food">
              <img src="/projeto3-driveneats/images/Lamem.jpg">
              <h2>Lamem tradicional</h2>
              <div class="descricao">
@@ -29,8 +28,9 @@
                 <h4>Carne e ovo</h4>
             </div>
              <h3>R$ 14,90</h3>
+             <ion-icon name="checkmark-circle"></ion-icon>
          </div>
-         <div class="prato">
+         <div onclick="selecionar(`${this} + food`)" class="prato food">
             <img src="/projeto3-driveneats/images/Lamem.jpg">
             <h2>Lamem tradicional</h2>
             <div class="descricao">
@@ -38,8 +38,9 @@
                <h4>Carne e ovo</h4>
            </div>
             <h3>R$ 14,90</h3>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="prato">
+        <div onclick="selecionar(`${this} + food`)" class="prato food">
             <img src="/projeto3-driveneats/images/Lamem.jpg">
             <h2>Lamem tradicional</h2>
             <div class="descricao">
@@ -47,8 +48,9 @@
                <h4>Carne e ovo</h4>
            </div>
             <h3>R$ 14,90</h3>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="prato">
+        <div onclick="selecionar(`${this} + food`)" class="prato food">
             <img src="/projeto3-driveneats/images/Lamem.jpg">
             <h2>Lamem tradicional</h2>
             <div class="descricao">
@@ -56,8 +58,9 @@
                <h4>Carne e ovo</h4>
            </div>
             <h3>R$ 14,90</h3>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="prato">
+        <div onclick="selecionar(`${this} + food`)" class="prato food">
             <img src="/projeto3-driveneats/images/Lamem.jpg">
             <h2>Lamem tradicional</h2>
             <div class="descricao">
@@ -65,12 +68,13 @@
                <h4>Carne e ovo</h4>
            </div>
             <h3>R$ 14,90</h3>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
      </div>
 
      <h1>Agora, sua bebida</h1>
      <div class="pratos">
-         <div class="prato">
+         <div onclick="selecionar(`${this} + drink`)" class="prato drink">
              <img src="/projeto3-driveneats/images/Coca.jpg">
              <h2>Coquinha gelada</h2>
              <div class="descricao">
@@ -78,8 +82,9 @@
                 <h4></h4>
             </div>
              <h3>R$ 4,90</h3>
+             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="prato">
+        <div onclick="selecionar(`${this} + drink`)" class="prato drink">
             <img src="/projeto3-driveneats/images/Coca.jpg">
             <h2>Coquinha gelada</h2>
             <div class="descricao">
@@ -87,7 +92,9 @@
                <h4></h4>
            </div>
             <h3>R$ 4,90</h3>
-       </div><div class="prato">
+            <ion-icon name="checkmark-circle"></ion-icon>
+       </div>
+       <div onclick="selecionar(`${this} + drink`)" class="prato drink">
         <img src="/projeto3-driveneats/images/Coca.jpg">
         <h2>Coquinha gelada</h2>
         <div class="descricao">
@@ -95,7 +102,9 @@
            <h4></h4>
        </div>
         <h3>R$ 4,90</h3>
-   </div><div class="prato">
+        <ion-icon name="checkmark-circle"></ion-icon>
+   </div>
+   <div onclick="selecionar(`${this} + drink`)" class="prato drink">
     <img src="/projeto3-driveneats/images/Coca.jpg">
     <h2>Coquinha gelada</h2>
     <div class="descricao">
@@ -103,7 +112,9 @@
        <h4></h4>
    </div>
     <h3>R$ 4,90</h3>
-</div><div class="prato">
+    <ion-icon name="checkmark-circle"></ion-icon>
+</div>
+<div onclick="selecionar(`${this} + drink`)" class="prato drink">
     <img src="/projeto3-driveneats/images/Coca.jpg">
     <h2>Coquinha gelada</h2>
     <div class="descricao">
@@ -111,12 +122,13 @@
        <h4></h4>
    </div>
     <h3>R$ 4,90</h3>
+    <ion-icon name="checkmark-circle"></ion-icon>
 </div>
      </div>
 
      <h1>Por fim, sua sobremesa</h1>
      <div class="pratos">
-         <div class="prato">
+         <div onclick="selecionar(`${this} + sobremesa`)" class="prato sobremesa">
              <img src="/projeto3-driveneats/images/Ichigo-Daifuku.jpg">
              <h2>Ichigo Daifuku</h2>
              <div class="descricao">
@@ -124,8 +136,9 @@
                 <h4>Morango</h4>
             </div>
              <h3>R$ 5,90</h3>
+             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="prato">
+        <div onclick="selecionar(`${this} + sobremesa`)" class="prato sobremesa">
             <img src="/projeto3-driveneats/images/Ichigo-Daifuku.jpg">
             <h2>Ichigo Daifuku</h2>
             <div class="descricao">
@@ -133,7 +146,9 @@
                <h4>Morango</h4>
            </div>
             <h3>R$ 5,90</h3>
-       </div><div class="prato">
+            <ion-icon name="checkmark-circle"></ion-icon>
+       </div>
+       <div onclick="selecionar(`${this} + sobremesa`)" class="prato sobremesa">
         <img src="/projeto3-driveneats/images/Ichigo-Daifuku.jpg">
         <h2>Ichigo Daifuku</h2>
         <div class="descricao">
@@ -141,7 +156,9 @@
            <h4>Morango</h4>
        </div>
         <h3>R$ 5,90</h3>
-   </div><div class="prato">
+        <ion-icon name="checkmark-circle"></ion-icon>
+   </div>
+   <div onclick="selecionar(`${this} + sobremesa`)" class="prato sobremesa">
     <img src="/projeto3-driveneats/images/Ichigo-Daifuku.jpg">
     <h2>Ichigo Daifuku</h2>
     <div class="descricao">
@@ -149,7 +166,9 @@
        <h4>Morango</h4>
    </div>
     <h3>R$ 5,90</h3>
-</div><div class="prato">
+    <ion-icon name="checkmark-circle"></ion-icon>
+</div>
+<div onclick="selecionar(`${this} + sobremesa`)" class="prato sobremesa">
     <img src="/projeto3-driveneats/images/Ichigo-Daifuku.jpg">
     <h2>Ichigo Daifuku</h2>
     <div class="descricao">
@@ -157,15 +176,20 @@
        <h4>Morango</h4>
    </div>
     <h3>R$ 5,90</h3>
+    <ion-icon name="checkmark-circle"></ion-icon>
 </div>
      </div>
 
  </div>
 
  <div class="barra-baixo">
-     <h3>Selecione os 3 itens para fechar o pedido</h3>
-     <h4>Fechar pedido</h4>
+     <div class="botao">
+        <h3>Selecione os 3 itens para fechar o pedido</h3>
+         <h4 class="esconder">Fechar pedido</h4>
+    </div>
  </div>
-</div>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,8 @@
-.big-container {
-    background-color: #E5E5E5;
-    position: relative;
+* {
+    box-sizing: border-box;
+}
+ion-icon {
+    display: none;
 }
 .barra-topo{
     width: 414px;
@@ -9,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     z-index: 1;
@@ -20,30 +22,35 @@
     font-family: "Righteous";
     font-weight: 400;
     font-style: normal;
+    margin-left: 20px;
 }
 .barra-topo > h3 {
     font-size: 18px;
     color: #FFFFFF;
     font-family: "Roboto";
     font-weight: 400;
+    margin-left: 20px;
 }
 
 .container {
+    margin-top: 123px;
     width: 414px;
     display: flex;
     flex-direction: column;
     background-color: #E5E5E5;
-    margin-top: 123px;
 }
 .container > h1 {
     margin-bottom: 17px;
     font-size: 26px;
     font-size: 400;
+    margin-left: 20px;
 }
 .pratos {
     display: flex;
     margin-bottom: 27px;
     overflow-x: scroll;
+    margin-bottom: 90px;
+    margin-left: 20px;
 }
 .prato {
     width: 172px;
@@ -86,4 +93,45 @@
     font-size: 16px;
     color: #000000;
     font-weight: 400;
+}
+.barra-baixo {
+    width: 414px;
+    height: 92px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A6A6A6;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+}
+.botao > h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.botao > h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.esconder {
+    display: none;
+}
+.selecionar {
+    border: 5px solid #32B72F;
+}
+.selecionar > ion-icon {
+    display: initial;
+    color: #32B72F;
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
 }
