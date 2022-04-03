@@ -94,6 +94,70 @@ ion-icon {
     color: #000000;
     font-weight: 400;
 }
+.drink {
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 16px;
+    border-radius: 9px;
+}
+.drink > img {
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+}
+.drink > h2 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    position: absolute;
+    left: 14px;
+    bottom: 80px;
+}
+.drink > h3 {
+    position: absolute;
+    left: 14px;
+    bottom: 13px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+.sobremesa {
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 16px;
+    border-radius: 9px;
+}
+.sobremesa > img {
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+}
+.sobremesa > h2 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    position: absolute;
+    left: 14px;
+    bottom: 80px;
+}
+.sobremesa > h3 {
+    position: absolute;
+    left: 14px;
+    bottom: 13px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
 .barra-baixo {
     width: 414px;
     height: 92px;
@@ -105,7 +169,7 @@ ion-icon {
     bottom: 0;
     left: 0;
 }
-.botao {
+.botao1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,16 +178,22 @@ ion-icon {
     height: 61px;
     border-radius: 50px;
 }
-.botao > h3 {
+.botao1 > h3 {
     font-size: 20px;
     color: #FFFFFF;
 }
-.botao > h4 {
+.botao2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #32B72F;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+}
+.botao2 > h3 {
     font-size: 20px;
     color: #FFFFFF;
-}
-.esconder {
-    display: none;
 }
 .selecionar {
     border: 5px solid #32B72F;
@@ -134,4 +204,27 @@ ion-icon {
     position: absolute;
     bottom: 13px;
     right: 5px;
+}
+.selecionardrink {
+    border: 5px solid #32B72F;
+}
+.selecionardrink > ion-icon {
+    display: initial;
+    color: #32B72F;
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
+}
+.selecionarsobremesa {
+    border: 5px solid #32B72F;
+}
+.selecionarsobremesa > ion-icon {
+    display: initial;
+    color: #32B72F;
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
+}
+.esconder {
+    display: none;
 }
