@@ -18,6 +18,34 @@
  </div>
 
  <div class="container">
+     <div class="fecharpedido esconder">
+        <h2>Confirme seu pedido</h2>
+         <div class="pratoconfirmado">
+             <h2></h2>
+             <h3></h3>
+
+         </div>
+         <div class="drinkconfirmado">
+
+
+         </div>
+         <div class="sobremesaconfirmada">
+
+         </div>
+
+         <div class="valortotal">
+            <h2>TOTAL</h2>
+         </div>
+         <div onclick="fechar()" class="confirme">
+            <h1>Tudo certo, pode pedir!</h1>
+        </a>
+         </div>
+         <div onclick="cancelar()" class="cancela">
+            <h1>Cancelar</h1>
+         </div>
+
+
+     </div>
      <h1>Primeiro, seu prato</h1>
      <div class="pratos">
          <div onclick="selecionar(this)" class="prato">
@@ -184,7 +212,7 @@
      <div class="botao1">
         <h3>Selecione os 3 itens para fechar o pedido</h3>
     </div>
-    <div class="botao2 esconder">
+    <div onclick="fecharpedido()" class="botao2 esconder">
         <h3>Fechar pedido</h3>
     </div>
  </div>

@@ -4,6 +4,9 @@
 ion-icon {
     display: none;
 }
+body {
+    background-color: #E5E5E5;
+}
 .barra-topo{
     width: 414px;
     height: 92px;
@@ -45,12 +48,63 @@ ion-icon {
     font-size: 400;
     margin-left: 20px;
 }
+.fecharpedido {
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    z-index: 2;
+}
+.fecharpedido > h3 {
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.fecharpedido > h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.confirme {
+    width: 329px;
+    height: 52px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirme > h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074;
+}
+.cancela {
+    width: 329px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cancela > h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
 .pratos {
     display: flex;
     margin-bottom: 27px;
     overflow-x: scroll;
     margin-bottom: 90px;
     margin-left: 20px;
+}
+.pratos::-webkit-scrollbar{
+    display: none;
 }
 .prato {
     width: 172px;
