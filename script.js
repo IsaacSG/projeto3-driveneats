@@ -53,27 +53,35 @@ function selecionarsobremesa(sobremesaselecionada){
     }
 }
 function fecharpedido(){
+    pedido = document.querySelector(".fecharpedido");
+    pedido.classList.remove("esconder");
     nomecomida = document.querySelector(".pratos .selecionar h2").innerHTML;
     nomedrink = document.querySelector(".pratos .selecionardrink h2").innerHTML;
     nomesobremesa = document.querySelector(".pratos .selecionarsobremesa h2").innerHTML;
-    valorprato = Number(document.querySelector(".pratos .selecionar h3").innerHTML.replace(",",".").replace("R$",""));
-    valordrink = Number(document.querySelector(".pratos .selecionardrink h3").innerHTML.replace(",",".").replace("R$",""));
-    valorsobremesa = Number(document.querySelector(".pratos .selecionarsobremesa h3").innerHTML.replace(",",".").replace("R$",""));
-    const mensagem = `Olá, gostaria de fazer o pedido:
-    - Prato: ${nomecomida}
-    - Bebida: ${nomedrink}
-    - Sobremesa: ${nomesobremesa}
-    Total: R$ ${(valordrink + valorprato + valorsobremesa).toFixed(2)}`
-    window.open(`https://wa.me/5587996568058?text=${encodeURIComponent(mensagem)}`)
-    // pedido = document.querySelector(".fecharpedido");
-    // pedido.classList.remove("esconder");
-    // valorprato = document.querySelector(".prato > h3")
-    // const p1 = document.querySelector(".pratoconfirmado > h3")
-    // p1.innerHTML = (valorprato)
+    valorprato = document.querySelector(".pratos .selecionar h3").innerHTML.replace(",",".").replace("R$","");
+    valordrink = document.querySelector(".pratos .selecionardrink h3").innerHTML.replace(",",".").replace("R$","");
+    valorsobremesa = document.querySelector(".pratos .selecionarsobremesa h3").innerHTML.replace(",",".").replace("R$","");
+    prato = document.querySelector(".fecharpedido .pratoconfirmado h2");
+    prato.innerHTML = `- Prato: ${nomecomida} R$${valorprato}`;
+    drink = document.querySelector(".fecharpedido .drinkconfirmado h2");
+    drink.innerHTML = `- Bebida: ${nomedrink} R$${valordrink}`;
+    sobremesa = document.querySelector(".fecharpedido .sobremesaconfirmada h2");
+    sobremesa.innerHTML = `- Sobremesa: ${nomesobremesa} R$${valorsobremesa}`;
+    valortotal = document.querySelector(".fecharpedido .valortotal h2");
+    valortotal =`Total: R$ ${(Number(valordrink) + Number(valorprato) + Number(valorsobremesa)).toFixed(2)}`;
 }
 function fechar(){
     nome = prompt("Informe seu nome");
     endereco = prompt("Informe seu endereço");
+    const mensagem = `Olá, gostaria de fazer o pedido:
+    - Prato: ${nomecomida}
+    - Bebida: ${nomedrink}
+    - Sobremesa: ${nomesobremesa}
+    Total: R$ ${(Number(valordrink) + Number(valorprato) + Number(valorsobremesa)).toFixed(2)}
+
+    -Nome: ${nome}
+    -Endereço: ${endereco}`
+    window.open(`https://wa.me/5587996568058?text=${encodeURIComponent(mensagem)}`)
 }
 function cancelar(){
     pedido = document.querySelector(".fecharpedido");

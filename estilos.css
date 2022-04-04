@@ -70,6 +70,26 @@ body {
     font-weight: 700;
     color: #FFFFFF;
 }
+.pratoconfirmado > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.drinkconfirmado > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.sobremesaconfirmada > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.valortotal > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
 .confirme {
     width: 329px;
     height: 52px;
