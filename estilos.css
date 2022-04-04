@@ -5,7 +5,8 @@ ion-icon {
     display: none;
 }
 body {
-    background-color: #E5E5E5;
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .barra-topo{
     width: 414px;
